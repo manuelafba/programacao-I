@@ -23,3 +23,37 @@ def maior_valor_da_lista(lista):
     for valor in lista[1:]:
         maior = (maior + valor + abs(maior - valor))//2
     return maior
+
+def filtrar_por_tipo(lista, tipo):
+    lista_filtrada = []
+    for item in lista: 
+        if type(item) == tipo:
+            lista_filtrada.append(item)
+    return lista_filtrada
+
+def filtrar_nomes(cadastros):
+    lista_nomes = []
+    for item in cadastros:
+        lista_nomes.append(item['nome'])
+    return lista_nomes
+
+def formatar_caixa_alta(lista_nomes):
+        lista_formatada = []
+        for item in lista_nomes:
+            lista_formatada.append(item.upper())
+        return lista_formatada
+
+def formatar_caixa_baixa(lista_nomes):
+        lista_formatada = []
+        for item in lista_nomes:
+            lista_formatada.append(item.lower())
+        return lista_formatada
+
+
+def formatar_nomes(lista_nomes, opcao_formatacao):
+    if opcao_formatacao == 'CAIXA_ALTA':
+        return formatar_caixa_alta(lista_nomes)
+    elif opcao_formatacao == 'CAIXA_BAIXA':
+        return formatar_caixa_baixa(lista_nomes)
+    else:
+        return "O segundo argumento é inválido"
