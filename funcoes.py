@@ -1,6 +1,5 @@
 # def, nome da função, (argumentos), dois pontos
 import math as m
-# ceil pra cime floor pra baixo
 
 def criar_lista_reversa(lista): # Dois pontos sinalizam que a próxima linha será o início do escopo da função
     return lista[::-1]
@@ -69,29 +68,4 @@ def criar_lista_cadastros(nomes, emails):
                                 'Email': email
                                 })
     return lista_cadastros
-
-def criar_lista_inteiros(lista_decimais):
-    lista_inteiros = []
-    for numero in lista_decimais:
-        x1 = numero
-        x2 = str(x1)
-        idx = x2.index('.')
-        x3 = x2[idx+1:]
-        x4 = int(x3)
-        if x4 % 2 == 0:
-            lista_inteiros.append(m.floor(x1))
-        else:
-            lista_inteiros.append(m.ceil(x1))
-
-    return lista_inteiros
         
-
-#dada uma lista de numeros reais, faca um mapeamento para obter uma lista de inteiro tal que:
-#se o valor decimal for par, obtenha um número inteiro que seja o maior inteiro menor que o número real em análise
-#se o valor decimal for ímpar, obtenha um número inteiro que seja o menor inteiro maior que o número real em análise
-
-#dada tres listas de numeros reais, faça um mapeamento para obter uma lista onde cada elemento seja igual a soma do maior e menor elemento de indices correspondentes das tres listas
-
-#dada uma lista de numeros inteiros, construa a lista reversa e faça o filtro para obter somente os elementos que são iguais na lista original
-
-#dada uma lista de string, faça uma redução para determinar o tamanho da maior string. retorne o valor encontrado, a string e o indice da lista que ela está
