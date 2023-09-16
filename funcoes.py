@@ -68,4 +68,10 @@ def criar_lista_cadastros(nomes, emails):
                                 'Email': email
                                 })
     return lista_cadastros
+
+def calcular_tamanho_nomes(lista):
+    lista_tamanho_nomes = []
+    for item in lista:
+        lista_tamanho_nomes.append(len(item))
+    return lista_tamanho_nomes
         
