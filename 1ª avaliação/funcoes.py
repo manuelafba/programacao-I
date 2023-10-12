@@ -1,4 +1,4 @@
-# def, nome da função, (argumentos), dois pontos
+# estrutura: def, nome da função, (argumentos), dois pontos
 import math as m
 
 def criar_lista_reversa(lista): # Dois pontos sinalizam que a próxima linha será o início do escopo da função

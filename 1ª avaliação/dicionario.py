@@ -1,4 +1,4 @@
-# não é indexado, é referenciado pelas chaves
+# não é indexado, é referenciado pelas chaves.
 # {chave: elemento, chave: elemento, chave: elemento} - determinada pelos dois pontos
 
 cadastros = [ 

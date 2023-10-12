@@ -1,4 +1,4 @@
-import funcoesdicionario as f # importar o arquivo em que as funções foram criadas
+import funcoesdicionario as f # importa o arquivo em que as funções foram criadas
 
 cadastros = [ 
     {

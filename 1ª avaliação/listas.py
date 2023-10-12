@@ -1,4 +1,4 @@
-import funcoes as f # importar o arquivo em que as funções foram criadas
+import funcoes as f # importa o arquivo em que as funções foram criadas
 
 cadastros = [ 
     {

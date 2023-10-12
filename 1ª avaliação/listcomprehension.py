@@ -1,4 +1,4 @@
-#[x for x: colecao if filtro(x)]
+# [x for x: colecao if filtro(x)]
 # x = mapeamento
 # for x: colecao = iteracao
 # if filtro(x) = filtro (opcional)
