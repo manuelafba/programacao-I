@@ -1,3 +1,4 @@
+# refazer
 def filtrar_listas(lista):
     """
     Filtrar uma lista de listas de números inteiros para obter uma lista de listas onde a soma dos elementos da lista de uma determinada posição é maior que a soma dos elementos da lista da próxima posição.
