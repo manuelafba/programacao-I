@@ -12,8 +12,6 @@ def somar_reais(lista):
         if lista[item] > lista[item + 1]:
             soma += lista[item]
 
-    soma += lista[-1] # adicionar o último elemento
-
     return soma
 
 soma = somar_reais([1.5, 2, 7, 5, 1])

@@ -11,13 +11,10 @@ def filtrar_listas(lista):
     lista_filtrada = []
 
     for item in range(len(lista) - 1):
-        soma = sum(lista[item])
-        proxima_soma = sum(lista[item + 1])
-        
-        if soma > proxima_soma:
+        if sum(lista[item]) > sum(lista[item + 1]):
             lista_filtrada.append(lista[item])
     
     return lista_filtrada
 
-lista_de_lista_inteiros = filtrar_listas([[6, 2, 3], [4, 5, 6], [7, 8, 9]])
+lista_de_lista_inteiros = filtrar_listas([[1, 2, 7], [7, 3, 9], [3, 2, 0]])
 print(lista_de_lista_inteiros)
