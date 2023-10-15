@@ -21,3 +21,10 @@ def detectar_maior_string(lista):
 lista_de_strings = ["AAA", "AAAAA", "A", "AAAAA"]
 resultado, indice = detectar_maior_string(lista_de_strings)
 print(f"O tamanho da maior string é {resultado} e está no índice {indice}")
+
+def detectar_maior_string2(lista):
+     return [max((len(item), i) for i, item in enumerate(lista))]
+
+lista_de_strings = ["AAA", "AAAAA", "A", "AAAA"]
+resultado = detectar_maior_string2(lista_de_strings)
+print(resultado)

@@ -19,3 +19,9 @@ def filtrar_listas(lista):
 
 lista_de_lista_inteiros = filtrar_listas([[1, 2, 7], [7, 3, 9], [3, 2, 0]])
 print(lista_de_lista_inteiros)
+
+def filtrar_listas2(lista):
+    return [lista[item] for item in range(len(lista) - 1) if sum(lista[item]) > sum(lista[item + 1])]
+
+lista_de_lista_inteiros = filtrar_listas2([[1, 2, 7], [7, 3, 9], [3, 2, 0]])
+print(lista_de_lista_inteiros)

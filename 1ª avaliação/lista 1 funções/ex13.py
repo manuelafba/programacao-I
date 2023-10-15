@@ -19,3 +19,4 @@ def buscar_linearmente(lista, elemento):
 
 comparacoes, resultado = buscar_linearmente([1, 2, 4, 9, 3, 5], 4)
 print(f"{resultado}, {comparacoes} comparações")
+
