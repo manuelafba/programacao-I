@@ -42,11 +42,18 @@ opcao = '1'
 cadastros = []
 
 try:
-    while opcao in ['1', '2']:
-        opcao = input("Digite [1] para fazer um novo cadastro ou [2] para listar todos os cadastros: ")
+    while True:
+        opcao = input("Digite [1] para fazer um novo cadastro, [2] para listar todos os cadastros, ou [3] para encerrar o programa: ")
+        
         if opcao == '1':
-            cadastros = cadastrar(cadastros)
+            cadastros = cadastrar(cadastros)  
         elif opcao == '2':
-            listar_cadastros(cadastros)
+            listar_cadastros(cadastros)  
+        elif opcao == '3':
+            break 
+        else:
+            print("Opção inválida!")
+
 except Exception as e:
     print(e)
+
