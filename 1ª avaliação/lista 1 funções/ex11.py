@@ -41,3 +41,4 @@ def achar_idx_maior_primo(lista_inteiros):
 lista = [6, 8, 10, 12]
 maior_primo, indice_maior_primo = achar_idx_maior_primo(lista)
 print(f"O maior primo da lista é {maior_primo} e está no índice {indice_maior_primo}")
+
