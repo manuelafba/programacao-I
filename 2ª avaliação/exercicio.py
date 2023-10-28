@@ -1,5 +1,4 @@
 def validar_cadastro(nome, nascimento, sexo, cpf, rg, telefone, cadastros):
-
     if not cpf.isdigit() or not rg.isdigit() or not telefone.isdigit():
         raise Exception("CPF, RG e Telefone devem ser numéricos")
     if type(nome) != str or type(sexo) != str:
@@ -8,7 +7,7 @@ def validar_cadastro(nome, nascimento, sexo, cpf, rg, telefone, cadastros):
         raise Exception("CPF inválido")
     if len(rg) != 7:
         raise Exception("RG inválido")
-    if nascimento < 1900 or nascimento > 2023:
+    if int(nascimento) < 1900 or int(nascimento) > 2023:
         raise Exception("Nascimento inválido")
 
     cadastros.append({'Nome': nome, 'Nascimento': nascimento, 'Sexo': sexo, 'CPF': cpf, 'RG': rg, 'Telefone': telefone})
@@ -37,6 +36,7 @@ def listar_cadastros(cadastros):
         print('CPF: ', item['CPF'])
         print('RG: ', item['RG'])
         print('Telefone: ', item['Telefone'])
+        print("=-=-=-=-=-=-=-=-=")
 
 opcao = '1'
 cadastros = []
