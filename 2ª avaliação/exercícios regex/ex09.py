@@ -1,9 +1,9 @@
-# Escreva um programa para encontrar todas as ocorrências de palavras que inicie com letra maiúscula.
+# Escreva um programa para encontrar todas as ocorrências de palavras que iniciam com letra maiúscula.
 import re
 
-palavras = 'Estrela, gato, dados, Lua'
+palavras = "Gato, dados, estrela, Lua"
 
-regex = re.compile(r"^[A-Z]")
-saida = regex.findall(palavras)
+regex = re.compile(r"\b[A-Z]\w*")
 
-print(saida)
+for item in regex.finditer(palavras):
+    print(item)
