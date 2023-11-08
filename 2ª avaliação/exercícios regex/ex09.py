@@ -3,7 +3,7 @@ import re
 
 palavras = "Gato, dados, estrela, Lua"
 
-regex = re.compile(r"\b[A-Z]\w*")
+regex = re.compile(r"\b[A-Z][a-z]*\b")
 
 for item in regex.finditer(palavras):
     print(item)

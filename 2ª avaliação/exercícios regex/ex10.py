@@ -3,8 +3,8 @@ import re
 
 string = input("Digite uma string contendo apenas as letras A C T G: ")
 
-if re.search(r'[AC|TG]{2,}', string) and\
-    re.fullmatch(r'^[ACTG]+$', string):
+if re.search(r'AC.*AC|TG.*TG', string) and\
+    re.fullmatch(r'^[ACTG]+', string):
     print("String válida")
 else:
     print("String inválida")
