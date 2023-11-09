@@ -10,23 +10,23 @@ import re
 senha = input("Digite sua senha: ")
 
 if len(senha) >= 10 and\
-    re.search(r"[0-9]+", senha) and\
-    re.search(r"[a-z]+", senha) and\
-    re.search(r"[A-Z]+", senha) and\
-    re.search(r"[!@#$%&*=]{3,}", senha):
+    re.search(r"[0-9]", senha) and\
+    re.search(r"[a-z]", senha) and\
+    re.search(r"[A-Z]", senha) and\
+    re.search(r".*[!@#$%&*=].*[!@#$%&*=].*[!@#$%&*=].*", senha):
     print("Senha muito forte")
 
 elif len(senha) >= 8 and\
-    re.search(r"[0-9]+", senha) and\
-    re.search(r"[a-z]+", senha) and\
-    re.search(r"[A-Z]+", senha) and\
-    re.search(r"[!@#$%&*=]+", senha):
+    re.search(r"[0-9]", senha) and\
+    re.search(r"[a-z]", senha) and\
+    re.search(r"[A-Z]", senha) and\
+    re.search(r"[!@#$%&*=]", senha):
     print("Senha forte")
 
 elif len(senha) >= 6 and\
-    re.search(r"[0-9]+", senha) and\
-    re.search(r"[a-z]+", senha) and\
-    re.search(r"[A-Z]+", senha):
+    re.search(r"[0-9]", senha) and\
+    re.search(r"[a-z]", senha) and\
+    re.search(r"[A-Z]", senha):
     print("Senha média")
 
 elif len(senha) >= 6:
