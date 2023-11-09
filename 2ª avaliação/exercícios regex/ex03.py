@@ -14,6 +14,7 @@ if len(senha) >= 10 and\
     re.search(r"[a-z]", senha) and\
     re.search(r"[A-Z]", senha) and\
     re.search(r".*[!@#$%&*=].*[!@#$%&*=].*[!@#$%&*=].*", senha):
+        # len(re.findall("[!@#$%&*=]", senha)) >= 3
     print("Senha muito forte")
 
 elif len(senha) >= 8 and\
