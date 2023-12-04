@@ -52,4 +52,49 @@ def questao04():
             mortes += int(y)
     print(f"Mortes no estado do Pará: {mortes}")
 
+
+def questao05():
+    base = ler_datatran2020()
+    lista_uf = base["uf"]
+    lista_tipopista = base['tipo_pista']
+    chaves = set(lista_uf)
+    bd = dict()
+    for chave in chaves:
+        bd[chave] = 0
+        for x, y in zip(lista_uf, lista_tipopista):
+            if x == chave and y == 'Dupla':
+                bd[chave] += 1
+    uf_acidentes = sorted(bd.items(), key=lambda x: x[1], reverse=True) # ordenar o dicionário de acordo com os maiores valores
+    ufsmaisacidentes = uf_acidentes[:3]
+    for uf, acidente in ufsmaisacidentes:
+        print(f'{uf}: {acidente}')
+
+def questao06():
+    base = ler_datatran2020()
+    lista_ilesos = base['ilesos']
+    lista_feridos = base['feridos']
+    acidentes = 0
+    for x, y in zip(lista_feridos, lista_ilesos):
+        if int(x) > int(y):
+            acidentes += 1
+    print(acidentes)
+
+def questao07():
+    base = ler_datatran2020()
+    lista_ufs = base["uf"]
+    lista_ufsnorte = ['AC', 'AM', 'AP', 'PA', 'TO', 'RO', 'RR']
+    chaves = set(lista_ufsnorte)
+    bd = dict()
+    for chave in chaves:
+        bd[chave] = 0
+        for item in lista_ufs:
+            if item == chave:
+                bd[chave] += 1
+    with open('acidentesnorte.csv', 'w', encoding='utf-8') as resposta:
+        resposta.write(f'{bd}\n')
+
+
+
+
+
     
