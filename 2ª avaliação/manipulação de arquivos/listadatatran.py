@@ -93,6 +93,9 @@ def questao07():
     with open('acidentesnorte.csv', 'w', encoding='utf-8') as resposta:
         resposta.write(f'{bd}\n')
 
+def questao08():
+    pass
+
 
 
 
