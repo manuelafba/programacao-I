@@ -1,0 +1,29 @@
+Opera&#195;&#167;&#195;&#163;o
+Operador
+Exponencia&#195;&#167;&#195;&#163;o
+**
+Multiplica&#195;&#167;&#195;&#163;o, Divis&#195;&#163;o, Resto da divis&#195;&#163;o, Divis&#195;&#163;o inteira
+* / % //
+Adi&#195;&#167;&#195;&#163;o, Subtra&#195;&#167;&#195;&#163;o
++ -
+Rela&#195;&#167;&#195;&#163;o
+Operador
+Exemplo
+igual
+==
+A == B
+diferente
+!=
+A != 45
+maior
+>
+A > B
+menor
+<
+A < B
+maior ou igual
+>=
+A >= 45
+menor ou igual
+<=
+A <= B

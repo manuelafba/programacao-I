@@ -52,4 +52,4 @@ def questao04():
             mortes += int(y)
     print(f"Mortes no estado do Pará: {mortes}")
 
-questao04()
+    
