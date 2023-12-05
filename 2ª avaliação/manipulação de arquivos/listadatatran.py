@@ -93,8 +93,29 @@ def questao07():
     with open('acidentesnorte.csv', 'w', encoding='utf-8') as resposta:
         resposta.write(f'{bd}\n')
 
-def questao08():
-    pass
+def questao10():
+    base = ler_datatran2020()
+    lista_ufs = base['uf']
+    lista_feridos = base['feridos']
+
+    feridos_por_uf = list(zip(lista_ufs, lista_feridos))
+    max_feridos = max(lista_feridos)
+    ufs_maisferidos = [uf for uf, feridos in feridos_por_uf if feridos == max_feridos]
+    print(ufs_maisferidos)
+
+def questao14(): 
+    base = ler_datatran2020()
+    lista = base["dia_semana"]
+    chaves = set(lista)
+    bd = dict()
+    for chave in chaves:
+        bd[chave] = 0
+        for item in lista:
+            if item == chave:
+                bd[chave] += 1
+    print(bd)
+
+
 
 
 
