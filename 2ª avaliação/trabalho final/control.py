@@ -11,7 +11,6 @@ def init(p):
         '2': tela3.view(),
     }
     
-
 def route_change(route):
     page.views.clear()    
     page.views.append(
